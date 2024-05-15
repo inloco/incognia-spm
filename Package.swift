@@ -7,7 +7,10 @@ let package = Package(
     products: [
         .library(
             name: "Incognia",
-            targets: ["IncogniaCoreWrapper", "IncogniaWrapper", "IncogniaTrialWrapper", "IncogniaCore", "Incognia", "IncogniaTrial"]),
+            targets: ["IncogniaCoreWrapper", "IncogniaWrapper", "IncogniaCore", "Incognia"]),
+        .library(
+            name: "IncogniaTrial",
+            targets: ["IncogniaCoreWrapper", "IncogniaTrialWrapper", "IncogniaCore", "IncogniaTrial"]),
     ],
     targets: [
         .target(
