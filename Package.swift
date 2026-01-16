@@ -33,18 +33,18 @@ let package = Package(
         ),
         .binaryTarget(
             name: "IncogniaCore",
-            url: "https://repo.incognia.com/ios/6.27.1/IncogniaCore-6.27.1.zip",
-            checksum: "6083a98993f0d783fe789ea38af637f32f0031fb632307e76c8bda86cf316b4c"
+            url: "https://repo.incognia.com/ios/6.27.2/IncogniaCore-6.27.2.zip",
+            checksum: "b9637a7e26e86d60b2f77d3a93b7ca630cd68405a67733920871b0c542ce4d84"
         ),
         .binaryTarget(
             name: "Incognia",
-            url: "https://repo.incognia.com/ios/6.27.1/Incognia-6.27.1.zip",
-            checksum: "a507f3b6bc14e6ccec031ddc2e84484dfddb17b8ff7c7066a1696ffc632eea87"
+            url: "https://repo.incognia.com/ios/6.27.2/Incognia-6.27.2.zip",
+            checksum: "1486ff09a9bf430ff422f31a6c236038d62ee98cc277abf062692eed8fb678e7"
         ),
         .binaryTarget(
             name: "IncogniaTrial",
-            url: "https://repo.incognia.com/ios/6.27.1/IncogniaTrial-6.27.1.zip",
-            checksum: "11adafbc280dbc796a0ec503824576dd4cae4652d7fbdf5410c61ae3fe56328a"
+            url: "https://repo.incognia.com/ios/6.27.2/IncogniaTrial-6.27.2.zip",
+            checksum: "a51be5494ea642cd62c455dc68df4d7861603ce44309ac273049f887b68ab46b"
         ),
     ]
 )
