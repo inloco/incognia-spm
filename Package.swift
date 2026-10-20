@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "Incognia",
+    platforms: [.iOS(.v11)],
     products: [
         .library(
             name: "Incognia",
@@ -12,6 +13,7 @@ let package = Package(
     targets: [
         .target(
             name: "IncogniaCoreWrapper",
+            dependencies: ["IncogniaCore"],
             path: "SwiftPM-Wrap/IncogniaCore-Wrapper",
             resources: [
                 .copy("Resources/PrivacyInfo.xcprivacy"),
