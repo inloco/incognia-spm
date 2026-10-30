@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "Incognia",
+    platforms: [.iOS(.v11)],
     products: [
         .library(
             name: "Incognia",
@@ -12,6 +13,7 @@ let package = Package(
     targets: [
         .target(
             name: "IncogniaCoreWrapper",
+            dependencies: ["IncogniaCore"],
             path: "SwiftPM-Wrap/IncogniaCore-Wrapper",
             resources: [
                 .copy("Resources/PrivacyInfo.xcprivacy"),
@@ -33,18 +35,18 @@ let package = Package(
         ),
         .binaryTarget(
             name: "IncogniaCore",
-            url: "https://repo.incognia.com/ios/6.35.0/IncogniaCore-6.35.0.zip",
-            checksum: "aedb6f2e0d957ac82b9b41bdf4faa373b30183aa79d52a5ee08d6c5c45cb43db"
+            url: "https://repo.incognia.com/ios/6.36.0/IncogniaCore-6.36.0.zip",
+            checksum: "27e63f56675103ff48173448b4392be4cc5a0124d8d59b24e784f5bcfcf873e8"
         ),
         .binaryTarget(
             name: "Incognia",
-            url: "https://repo.incognia.com/ios/6.35.0/Incognia-6.35.0.zip",
-            checksum: "6931406475525c32d1fe17932d90034c85c88dcdff9998db13dfa1480887d029"
+            url: "https://repo.incognia.com/ios/6.36.0/Incognia-6.36.0.zip",
+            checksum: "fdab1266ecb7280502b8e494ae4b4e13e228b4ba4e9139d756be06627066829c"
         ),
         .binaryTarget(
             name: "IncogniaTrial",
-            url: "https://repo.incognia.com/ios/6.35.0/IncogniaTrial-6.35.0.zip",
-            checksum: "eb96cec7381ccc43a2ff38cef112d631c0765c0a1c26d221efaaf28b2b26862e"
+            url: "https://repo.incognia.com/ios/6.36.0/IncogniaTrial-6.36.0.zip",
+            checksum: "97c4eef748a0c5c165f4c329c152454710aaed8ccdedcb971c10dbc783572852"
         ),
     ]
 )
